@@ -12,9 +12,10 @@ License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
 URL:		http://glade.pn.org/
-BuildRequires:	libgnomeui-devel
-BuildRequires:	libgnomecanvas-devel
 BuildRequires:	libbonoboui-devel
+BuildRequires:	libgnomedb-devel
+BuildRequires:	libgnomecanvas-devel
+BuildRequires:  libgnomeui-devel
 BuildRequires:	libgnomeprintui-devel
 BuildRequires:	scrollkeeper
 BuildRequires:	xft-devel >= 2.0-6
