@@ -9,7 +9,6 @@ Name:		glade2
 Version:	2.0.0
 Release:	1
 License:	GPL
-Vendor:		Damon Chaplin <DAChaplin@msn.com>
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
 URL:		http://glade.pn.org/
