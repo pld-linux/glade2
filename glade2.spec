@@ -98,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README TODO ChangeLog 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gnome/help/*
-%{_datadir}/glade-2/*
+%{_datadir}/glade-2
 %{_omf_dest_dir}/glade-2
 %{_desktopdir}/glade-2.desktop
 %{_pixmapsdir}/*
