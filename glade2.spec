@@ -24,6 +24,9 @@ BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.4.1
 BuildRequires:	scrollkeeper >= 0.1.4
 BuildRequires:	xft-devel >= 2.0-6
+# loads libgail.so, libgail-gnome.so GTK modules on start
+Requires:	gail
+Requires:	libgail-gnome
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
