@@ -1,12 +1,11 @@
-diff -urN aa/glade-2.5.0/configure.in glade-2.5.0/configure.in
---- aa/glade-2.5.0/configure.in	2004-03-17 17:57:30.000000000 +0100
-+++ glade-2.5.0/configure.in	2004-03-17 21:39:29.777878624 +0100
+--- glade-2.6.2/configure.in.orig	2004-10-13 12:54:03.000000000 +0200
++++ glade-2.6.2/configure.in	2004-10-13 16:56:49.956650376 +0200
 @@ -109,7 +109,7 @@
  AC_SUBST(GETTEXT_PACKAGE)
- AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
  
--ALL_LINGUAS="am az be ca cs da de el en_CA en_GB es fr ga gl hr hu it ja ko lv mk ml ms nl nn no pl pt pt_BR ro ru sk sr sr@Latn sv tr uk vi yi zh_CN"
-+ALL_LINGUAS="am az be ca cs da de el en_CA en_GB es fr ga gl hr hu it ja ko lv mk ml ms nb nl nn pl pt pt_BR ro ru sk sr sr@Latn sv tr uk vi yi zh_CN"
+-ALL_LINGUAS="am az be ca cs da de el en_CA en_GB es fr ga gl hr hu it ja ko lv mk ml ms nl nn no pl pt pt_BR ro ru sk sq sr sr@Latn sv tr uk vi yi zh_CN"
++ALL_LINGUAS="am az be ca cs da de el en_CA en_GB es fr ga gl hr hu it ja ko lv mk ml ms nb nl nn pl pt pt_BR ro ru sk sq sr sr@Latn sv tr uk vi yi zh_CN"
  AM_GLIB_GNU_GETTEXT
  
  
