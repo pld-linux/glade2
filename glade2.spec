@@ -1,7 +1,7 @@
-Summary:	Glade - a user interface builder for Gtk+2
+Summary:	Glade - a user interface builder for GTK+2
 Summary(es):	Herramienta visual para creación de interfaces GTK+2 o GNOME
 Summary(fr):	Outil de programmation graphique visuel
-Summary(pl):	Glade - narzêdzie do budowania GUI w oparciu o bibliotekê Gtk+2
+Summary(pl):	Glade - narzêdzie do budowania GUI w oparciu o bibliotekê GTK+2
 Summary(pt_BR):	Ferramenta visual para criação de interfaces GTK+2 ou GNOME
 Summary(ru):	äÉÁÌÏÇÏ×ÏÅ ÐÏÓÔÒÏÅÎÉÅ ÉÎÔÅÒÆÅÊÓÏ× ÎÁ ÏÓÎÏ×Å GTK+2
 Summary(uk):	ä¦ÁÌÏÇÏ×Á ÐÏÂÕÄÏ×Á ¦ÎÔÅÒÆÅÊÓ¦× ÎÁ ÏÓÎÏ×¦ GTK+2
@@ -24,7 +24,7 @@ BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.4.1
 BuildRequires:	scrollkeeper >= 0.1.4
 BuildRequires:	xft-devel >= 2.0-6
-# loads libgail.so, libgail-gnome.so GTK modules on start
+# loads libgail.so, libgail-gnome.so GTK+ modules on start
 Requires:	gail
 Requires:	libgail-gnome
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -55,7 +55,7 @@ tels que le C, le C++, l'ADA, Perl et le Python.
 %description -l pl
 Glade jest narzêdziem typu RAD (Rapid Application Development) do
 szybkiego i wygodnego tworzenia interfejsu u¿ytkownika z u¿yciem
-biblioteki Gtk+2. Zawiera tak¿e w sobie generator kodu ¼ród³owego
+biblioteki GTK+2. Zawiera tak¿e w sobie generator kodu ¼ród³owego
 tworzonego interfejsu w C.
 
 Definicja interfejsu u¿ytkownika tworzona przez Glade jest
