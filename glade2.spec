@@ -51,14 +51,14 @@ tels que le C, le C++, l'ADA, Perl et le Python.
 %description -l pl
 Glade jest narzêdziem typu RAD (Rapid Application Development) do
 szybkiego i wygodnego tworzenia interfejsu u¿ytkownika z u¿yciem
-biblioteki Gtk+2. Zawiera tak¿e w sobie generator kodu ¼ród³owego w C
-tworzonego interfejsu.
+biblioteki Gtk+2. Zawiera tak¿e w sobie generator kodu ¼ród³owego
+tworzonego interfejsu w C.
 
 Definicja interfejsu u¿ytkownika tworzona przez Glade jest
-przechowywana w formacie dokumentu XML, który umozliwia ³atwe uzywanie
+przechowywana w formacie dokumentu XML, który umo¿liwia ³atwe u¿ywanie
 tego opisu przez zewnêtrzne narzêdzia jak generatory kodu ¼ród³owego
-do innych jêzyków programowania. W obecnej chwili s± dostêpne
-generatory kodu ¼ród³owego do C, C++, ADA, Perla i Pythona.
+w innych jêzykach programowania. W obecnej chwili s± dostêpne
+generatory kodu ¼ród³owego w C, C++, ADA, Perlu i Pythonie.
 
 %description -l pt_BR
 Ferramenta visual para criação de interfaces gtk+ ou GNOME.
