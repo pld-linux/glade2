@@ -7,23 +7,17 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	1.1.2
-Release:	0
+Release:	1
 License:	GPL
 Vendor:		Damon Chaplin <DAChaplin@msn.com>
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/2.0.2/sources/glade/glade-%{version}.tar.bz2
 URL:		http://glade.pn.org/
-#BuildRequires:	XFree86-libs
-#BuildRequires:	autoconf
-#BuildRequires:	automake
-#BuildRequires:	bonobo-devel >= 0.25
-#BuildRequires:	gettext-devel
-#BuildRequires:	gnome-libs-devel
-#BuildRequires:	gnome-db-devel
-#BuildRequires:	gtk+-devel
-#BuildRequires:	intltool
-#BuildRequires:	libtool
-#BuildRequires:	scrollkeeper
+BuildRequires:	libgnomeui-devel
+BuildRequires:	libgnomecanvas-devel
+BuildRequires:	libbonoboui-devel
+BuildRequires:	libgnomeprintui-devel
+BuildRequires:	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -84,16 +78,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %setup -q -n glade-%{version}
 
 %build
-#rm -f missing
-#%{__libtoolize}
-#%{__gettextize}
-#xml-i18n-toolize --copy --force
-#aclocal -I macros
-#%{__autoconf}
-#%{__automake}
 %configure 
-#	--without-bonobo \
-#	--enable-gnome-db
 
 %{__make}
 
@@ -104,8 +89,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Developmentdir=%{_datadir}/applications \
 	omf_dest_dir=%{_omf_dest_dir}/%{name}
-
-#rm -f doc/Makefile*
 
 %find_lang glade-2.0
 
