@@ -11,6 +11,7 @@ Release:	3
 License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
+# Source0-md5:	16b685dca1064a950d9f506b669cf859
 URL:		http://glade.pn.org/
 BuildRequires:	libbonoboui-devel
 BuildRequires:	libgnomedb-devel
