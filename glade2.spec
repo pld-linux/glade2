@@ -8,20 +8,21 @@ Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	2.10.0
 Release:	2
-License:	GPL
+License:	GPL v2+
 Group:		Development/Building
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.10/glade-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.10/glade-%{version}.tar.bz2
 # Source0-md5:	6b892fd2299224f0208578a3a36826da
 Patch0:		%{name}-desktop.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.6.4
-BuildRequires:	libbonoboui-devel >= 2.8.1
-BuildRequires:	libgnomedb-devel >= 1.0.0
+BuildRequires:	libbonoboui-devel >= 2.8.1-2
+BuildRequires:	libgnomedb-devel >= 1.2.1-2
 BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
-BuildRequires:	libxml2-devel >= 2.6.18
+BuildRequires:	libxml2-devel >= 1:2.6.18
+BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper >= 0.1.4
 BuildRequires:	xft-devel >= 2.0-6
 # loads libgail.so, libgail-gnome.so GTK+ modules on start
