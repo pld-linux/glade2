@@ -7,7 +7,7 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	1.1.3
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		Damon Chaplin <DAChaplin@msn.com>
 Group:		Development/Building
