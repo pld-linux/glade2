@@ -24,7 +24,6 @@ URL:		http://glade.pn.org/
 #BuildRequires:	intltool
 #BuildRequires:	libtool
 #BuildRequires:	scrollkeeper
-#Prereq:		scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -110,14 +109,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang glade-2.0
 
-%post
-scrollkeeper-update
-
-%postun
-scrollkeeper-update
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /usr/bin/scrollkeeper-update
+%postun	-p /usr/bin/scrollkeeper-update
 
 %files -f glade-2.0.lang
 %defattr(644,root,root,755)
