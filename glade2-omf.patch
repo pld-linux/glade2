@@ -1,0 +1,94 @@
+diff -Nuard glade-1.1.2.orig/doc/C/glade-faq/glade-faq-C.omf glade-1.1.2/doc/C/glade-faq/glade-faq-C.omf
+--- glade-1.1.2.orig/doc/C/glade-faq/glade-faq-C.omf	Mon Apr  1 22:17:38 2002
++++ glade-1.1.2/doc/C/glade-faq/glade-faq-C.omf	Fri Oct 25 12:53:39 2002
+@@ -1,14 +1,22 @@
+-<?xml version="1.0" standalone="no"?>
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE omf PUBLIC "-//OMF//DTD Scrollkeeper OMF Variant V1.0//EN" "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd">
+ <omf>
+   <resource>
++    <creator/>
+     <title>
+       Glade FAQ
+     </title>
+-    <subject>
+-      <category>GNOME|Development</category>
+-    </subject>
++    <date>
++	2002-10-02
++    </date>
++    <version identifier="1.1.2" date="2002-10-02"/>
++    <subject category="GNOME|Development"/>
++    <description/>
++    <type/>
+     <format mime="text/xml"/>
+     <identifier url="faq.xml"/>
+     <language code="C"/>
++    <relation seriesid="fcfb0dc8-e807-11d6-8c3f-83529d781d0d"/>
++    <rights type="GNU GPL" license.version="2" license="http://www.gnu.org/licenses/gpl.html"/>
+   </resource>
+ </omf>
+diff -Nuard glade-1.1.2.orig/doc/C/glade-turbo-start/glade-turbo-start-C.omf glade-1.1.2/doc/C/glade-turbo-start/glade-turbo-start-C.omf
+--- glade-1.1.2.orig/doc/C/glade-turbo-start/glade-turbo-start-C.omf	Mon Apr  1 22:17:41 2002
++++ glade-1.1.2/doc/C/glade-turbo-start/glade-turbo-start-C.omf	Fri Oct 25 12:56:52 2002
+@@ -1,14 +1,22 @@
+-<?xml version="1.0" standalone="no"?>
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE omf PUBLIC "-//OMF//DTD Scrollkeeper OMF Variant V1.0//EN" "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd">
+ <omf>
+   <resource>
++    <creator/>
+     <title>
+       Glade Turbo-Start
+     </title>
+-    <subject>
+-      <category>GNOME|Development</category>
+-    </subject>
+-    <format mime="text/sgml"/>
+-    <identifier url="turbo-start.sgml"/>
++    <date>
++	2002-10-02
++    </date>
++    <version identifier="1.1.2" date="2002-10-02"/>
++    <subject category="GNOME|Development"/>
++    <description/>
++    <type/>
++    <format mime="text/xml"/>
++    <identifier url="turbo-start.xml"/>
+     <language code="C"/>
++    <relation seriesid="fcfb0dc8-e807-11d6-8c3f-83529d781d0d"/>
++    <rights type="GNU GPL" license.version="2" license="http://www.gnu.org/licenses/gpl.html"/>
+   </resource>
+ </omf>
+diff -Nuard glade-1.1.2.orig/doc/C/glade-user-guide/glade-user-guide-C.omf glade-1.1.2/doc/C/glade-user-guide/glade-user-guide-C.omf
+--- glade-1.1.2.orig/doc/C/glade-user-guide/glade-user-guide-C.omf	Mon Apr  1 22:17:42 2002
++++ glade-1.1.2/doc/C/glade-user-guide/glade-user-guide-C.omf	Fri Oct 25 12:57:54 2002
+@@ -1,14 +1,22 @@
+-<?xml version="1.0" standalone="no"?>
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE omf PUBLIC "-//OMF//DTD Scrollkeeper OMF Variant V1.0//EN" "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd">
+ <omf>
+   <resource>
++    <creator/>
+     <title>
+       Glade Reference Manual
+     </title>
+-    <subject>
+-      <category>GNOME|Development</category>
+-    </subject>
+-    <format mime="text/sgml"/>
+-    <identifier url="user-guide.sgml"/>
++    <date>
++	2002-10-02
++    </date>
++    <version identifier="1.1.2" date="2002-10-02"/>
++    <subject category="GNOME|Development"/>
++    <description/>
++    <type/>
++    <format mime="text/xml"/>
++    <identifier url="user-guide.xml"/>
+     <language code="C"/>
++    <relation seriesid="fcfb0dc8-e807-11d6-8c3f-83529d781d0d"/>
++    <rights type="GNU GPL" license.version="2" license="http://www.gnu.org/licenses/gpl.html"/>
+   </resource>
+ </omf>
