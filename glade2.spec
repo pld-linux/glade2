@@ -6,14 +6,13 @@ Summary(pt_BR):	Ferramenta visual para criaГЦo de interfaces GTK+2 ou GNOME
 Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
-Version:	2.6.5
-Release:	2
+Version:	2.6.6
+Release:	1
 License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.6/glade-%{version}.tar.bz2
-# Source0-md5:	57767927c11ae9425c797486c46e1d26
-Patch0:		%{name}-locale-names.patch
-Patch1:		%{name}-desktop.patch
+# Source0-md5:	816df918f543c056da16e825616ae91c
+Patch0:		%{name}-desktop.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -84,9 +83,6 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %prep
 %setup -q -n glade-%{version}
 %patch0 -p1
-%patch1 -p1
-
-mv po/{no,nb}.po
 
 %build
 %{__libtoolize}
@@ -102,6 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 # glade-2.0.mo, but gnome/help/glade-2 - use --all-name
 %find_lang glade-2.0 --all-name --with-gnome
 
