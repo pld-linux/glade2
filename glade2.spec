@@ -7,7 +7,7 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		Damon Chaplin <DAChaplin@msn.com>
 Group:		Development/Building
@@ -18,10 +18,8 @@ BuildRequires:	libgnomecanvas-devel
 BuildRequires:	libbonoboui-devel
 BuildRequires:	libgnomeprintui-devel
 BuildRequires:	scrollkeeper
+BuildRequires:	Xft-devel >= 2.0-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_omf_dest_dir	%(scrollkeeper-config --omfdir)
 
 %description
 Glade is a RAD tool to enable quick & easy development of user
