@@ -13,6 +13,7 @@ Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
 # Source0-md5:	83fae1cdebb37461450906f212c1bc76
 Patch0:		%{name}-desktop-pl-translation.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	gtksourceview-devel
 BuildRequires:	libbonoboui-devel >= 2.4.0
@@ -78,6 +79,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %prep
 %setup -q -n glade-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
