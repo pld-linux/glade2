@@ -7,7 +7,7 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	2.10.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.10/glade-%{version}.tar.bz2
@@ -19,7 +19,7 @@ BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.6.4
 BuildRequires:	libbonoboui-devel >= 2.8.1
 BuildRequires:	libgnomedb-devel >= 1.0.0
-BuildRequires:	libgnomeui-devel >= 2.10.0
+BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.6.18
 BuildRequires:	scrollkeeper >= 0.1.4
