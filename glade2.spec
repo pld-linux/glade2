@@ -37,7 +37,7 @@ generating the C source code needed to recreate the interfaces.
 The user interfaces designed in Glade are stored in the well-known XML
 format, enabling easy integration with external tools. Several tools
 are already available which can turn the XML files into source code in
-other languages such as C, C++, ADA, Perl and Python.
+other languages such as C, C++, ADA.
 
 %description -l es
 Herramienta visual para creaciСn de interfaces GTK+2 o GNOME
@@ -50,7 +50,7 @@ de construire facilment des interfaces utilisateurs utilisant la boite
 Les interfaces conГues Ю l'aide de GLADE sont stockИes au format XML,
 permettant un interfacage aisИ avec d'autres outils. Plusieurs outils
 sont disponibles pour exporter le code source dans d'autres langages
-tels que le C, le C++, l'ADA, Perl et le Python.
+tels que le C, le C++, l'ADA.
 
 %description -l pl
 Glade jest narzЙdziem typu RAD (Rapid Application Development) do
@@ -62,7 +62,7 @@ Definicja interfejsu u©ytkownika tworzona przez Glade jest
 przechowywana w formacie dokumentu XML, ktСry umo©liwia Ёatwe u©ywanie
 tego opisu przez zewnЙtrzne narzЙdzia jak generatory kodu ╪rСdЁowego
 w innych jЙzykach programowania. W obecnej chwili s╠ dostЙpne
-generatory kodu ╪rСdЁowego w C, C++, ADA, Perlu i Pythonie.
+generatory kodu ╪rСdЁowego w C, C++, ADA.
 
 %description -l pt_BR
 Ferramenta visual para criaГЦo de interfaces GTK+2 ou GNOME.
@@ -77,7 +77,7 @@ GLADE - это программа диалогового построения интерфейсов пользователя
 %description -l uk
 GLADE - це програма д╕алогово╖ побудови ╕нтерфейс╕в користувача п╕д
 GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
-також п╕дтримка мов C++, Ada95, Python та Perl через зовн╕шн╕
+також п╕дтримка мов C++, Ada95 через зовн╕шн╕
 ╕нструменти, що обробляють XML файли опису ╕нтерфейсу, створен╕ GLADE.
 
 %prep
