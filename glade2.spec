@@ -1,13 +1,13 @@
 Summary:	Glade - a user interface builder for Gtk+2
-Summary(fr):	Outil de programmation graphique visuel
 Summary(es):	Herramienta visual para creación de interfaces gtk+2 o gnome
+Summary(fr):	Outil de programmation graphique visuel
 Summary(pl):	Glade - narzêdzie do budowania GUI w oparciu o bibliotekê Gtk+2
 Summary(pt_BR):	Ferramenta visual para criação de interfaces gtk+2 ou gnome
 Summary(ru):	äÉÁÌÏÇÏ×ÏÅ ÐÏÓÔÒÏÅÎÉÅ ÉÎÔÅÒÆÅÊÓÏ× ÎÁ ÏÓÎÏ×Å GTK+2
 Summary(uk):	ä¦ÁÌÏÇÏ×Á ÐÏÂÕÄÏ×Á ¦ÎÔÅÒÆÅÊÓ¦× ÎÁ ÏÓÎÏ×¦ GTK+2
 Name:		glade2
 Version:	2.0.0
-Release:	1.1
+Release:	2
 License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
@@ -17,7 +17,7 @@ BuildRequires:	libgnomecanvas-devel
 BuildRequires:	libbonoboui-devel
 BuildRequires:	libgnomeprintui-devel
 BuildRequires:	scrollkeeper
-BuildRequires:	Xft-devel >= 2.0-6
+BuildRequires:	xft-devel >= 2.0-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -85,7 +85,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT 
 
-%find_lang glade-2.0
+# glade-2.0.mo, but gnome/help/glade-2 - use --all-name
+%find_lang glade-2.0 --all-name --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -97,7 +98,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README TODO ChangeLog 
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/gnome/help/*
 %{_datadir}/glade-2
 %{_omf_dest_dir}/glade-2
 %{_desktopdir}/glade-2.desktop
