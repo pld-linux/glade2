@@ -6,20 +6,20 @@ Summary(pt_BR):	Ferramenta visual para criaГЦo de interfaces gtk+2 ou GNOME
 Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
-Version:	2.5.0
+Version:	2.5.1
 Release:	1
 License:	GPL
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.5/glade-%{version}.tar.bz2
-# Source0-md5:	4ac1e0365e73bec6e5c9db3900a2c341
+# Source0-md5:	d26596d2a5cce30707ffcc66435d5012
 Patch0:		%{name}-locale-names.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.4.0
-BuildRequires:	libbonoboui-devel >= 2.4.0
+BuildRequires:	libbonoboui-devel >= 2.6.0
 BuildRequires:	libgnomedb-devel >= 1.0.0
-BuildRequires:	libgnomeui-devel >= 2.4.0
+BuildRequires:	libgnomeui-devel >= 2.6.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.4.1
 BuildRequires:	scrollkeeper >= 0.1.4
