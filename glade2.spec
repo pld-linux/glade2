@@ -77,7 +77,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %setup -q -n glade-%{version}
 
 %build
-%configure 
+%configure
 
 %{__make}
 
@@ -85,7 +85,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT 
+	DESTDIR=$RPM_BUILD_ROOT
 
 # glade-2.0.mo, but gnome/help/glade-2 - use --all-name
 %find_lang glade-2.0 --all-name --with-gnome
@@ -98,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f glade-2.0.lang
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README TODO ChangeLog 
+%doc AUTHORS NEWS README TODO ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/glade-2
 %{_omf_dest_dir}/glade-2
