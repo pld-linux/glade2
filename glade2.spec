@@ -6,12 +6,12 @@ Summary(pt_BR):	Ferramenta visual para criaГЦo de interfaces gtk+2 ou gnome
 Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
-Version:	1.1.3
-Release:	3
+Version:	2.0.0
+Release:	1
 License:	GPL
 Vendor:		Damon Chaplin <DAChaplin@msn.com>
 Group:		Development/Building
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/1.1/glade-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.0/glade-%{version}.tar.bz2
 URL:		http://glade.pn.org/
 BuildRequires:	libgnomeui-devel
 BuildRequires:	libgnomecanvas-devel
@@ -84,9 +84,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	Developmentdir=%{_datadir}/applications \
-	omf_dest_dir=%{_omf_dest_dir}/%{name}
+	DESTDIR=$RPM_BUILD_ROOT 
 
 %find_lang glade-2.0
 
@@ -98,10 +96,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f glade-2.0.lang
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README TODO ChangeLog doc/*.txt
+%doc AUTHORS NEWS README TODO ChangeLog 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gnome/help/*
 %{_datadir}/glade-2/*
-%{_omf_dest_dir}/%{name}
-%{_datadir}/applications/glade-2.desktop
+%{_omf_dest_dir}/glade-2
+%{_desktopdir}/glade-2.desktop
 %{_pixmapsdir}/*
