@@ -7,7 +7,7 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	2.10.0
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.10/glade-%{version}.tar.bz2
@@ -23,8 +23,10 @@ BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.18
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.1.4
 BuildRequires:	xft-devel >= 2.0-6
+Requires(post,postun):	scrollkeeper
 # loads libgail.so, libgail-gnome.so GTK+ modules on start
 Requires:	gail
 Requires:	libgail-gnome
@@ -106,8 +108,11 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	-p /usr/bin/scrollkeeper-update
-%postun	-p /usr/bin/scrollkeeper-update
+%post
+%scrollkeeper_update_post
+
+%postun
+%scrollkeeper_update_postun
 
 %files -f glade-2.0.lang
 %defattr(644,root,root,755)
