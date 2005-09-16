@@ -1,12 +1,11 @@
-diff -urN glade-2.6.5.orig/glade-2.desktop.in glade-2.6.5/glade-2.desktop.in
---- glade-2.6.5.orig/glade-2.desktop.in	2004-11-17 12:41:23.706226120 +0100
-+++ glade-2.6.5/glade-2.desktop.in	2004-11-17 12:42:32.682740096 +0100
+--- glade-2.12.0/glade-2.desktop.in.orig	2005-06-17 22:30:35.000000000 +0200
++++ glade-2.12.0/glade-2.desktop.in	2005-09-16 20:35:08.000000000 +0200
 @@ -6,7 +6,7 @@
  Terminal=false
  Type=Application
  Icon=glade-2.png
 -Categories=Application;Development;
 +Categories=GTK;GNOME;Development;GUIDesigner;
+ MimeType=application/x-glade
  X-GNOME-Bugzilla-Bugzilla=GNOME
  X-GNOME-Bugzilla-Product=glade
- X-GNOME-Bugzilla-Component=general

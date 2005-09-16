@@ -6,12 +6,12 @@ Summary(pt_BR):	Ferramenta visual para criaГЦo de interfaces GTK+2 ou GNOME
 Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
-Version:	2.10.0
-Release:	3
+Version:	2.12.0
+Release:	1
 License:	GPL v2+
 Group:		Development/Building
-Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.10/glade-%{version}.tar.bz2
-# Source0-md5:	6b892fd2299224f0208578a3a36826da
+Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.12/glade-%{version}.tar.bz2
+# Source0-md5:	723478d5e0476f376a6596472e1f4558
 Patch0:		%{name}-desktop.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf
