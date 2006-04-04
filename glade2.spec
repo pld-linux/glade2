@@ -26,7 +26,7 @@ BuildRequires:	libxml2-devel >= 1:2.6.18
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.1.4
-BuildRequires:	xft-devel >= 2.0-6
+BuildRequires:	xorg-lib-libXft-devel >= 2.0
 Requires(post,postun):	scrollkeeper
 # loads libgail.so, libgail-gnome.so GTK+ modules on start
 Requires:	gail
