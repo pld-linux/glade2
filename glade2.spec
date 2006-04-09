@@ -14,11 +14,12 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.12/glade-%{version}.tar.
 # Source0-md5:	4e7a25dbd30b8c9dc2cf3c593776c444
 Patch0:		%{name}-desktop.patch
 URL:		http://glade.gnome.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2:2.6.4
+BuildRequires:	gtk+2-devel >= 2:2.8.0
 BuildRequires:	libbonoboui-devel >= 2.8.1-2
+BuildRequires:	libgnomecanvas-devel >= 2.0.0
 BuildRequires:	libgnomedb-devel >= 1.9.100-2
 BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
@@ -26,7 +27,6 @@ BuildRequires:	libxml2-devel >= 1:2.6.18
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.1.4
-BuildRequires:	xorg-lib-libXft-devel >= 2.0
 Requires(post,postun):	scrollkeeper
 # loads libgail.so, libgail-gnome.so GTK+ modules on start
 Requires:	gail
@@ -44,7 +44,7 @@ are already available which can turn the XML files into source code in
 other languages such as C, C++, ADA.
 
 %description -l es
-Herramienta visual para creaciСn de interfaces GTK+2 o GNOME
+Herramienta visual para creaciСn de interfaces GTK+2 o GNOME.
 
 %description -l fr
 Glade est un outil de dИveloppement rapide (RAD en anglais) permettant
@@ -92,6 +92,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--enable-gnome-db
