@@ -7,7 +7,7 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	2.12.1
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.12/glade-%{version}.tar.bz2
@@ -32,6 +32,8 @@ Requires(post,postun):	scrollkeeper
 Requires:	gail
 Requires:	libgail-gnome
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		filterout_ld	(-Wl,)?--as-needed
 
 %description
 Glade is a RAD tool to enable quick & easy development of user
