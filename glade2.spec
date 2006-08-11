@@ -7,23 +7,25 @@ Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
 Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
 Name:		glade2
 Version:	2.12.1
-Release:	4
+Release:	5
 License:	GPL v2+
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.12/glade-%{version}.tar.bz2
 # Source0-md5:	4e7a25dbd30b8c9dc2cf3c593776c444
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-gda12.patch
+
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2:2.8.0
-BuildRequires:	libbonoboui-devel >= 2.8.1-2
+BuildRequires:	gtk+2-devel >= 2:2.10.1
+BuildRequires:	libbonoboui-devel >= 2.15.0
 BuildRequires:	libgnomecanvas-devel >= 2.0.0
-BuildRequires:	libgnomedb-devel >= 1.9.100-2
-BuildRequires:	libgnomeui-devel >= 2.10.0-2
+BuildRequires:	libgnomedb-devel >= 1:1.2.2
+BuildRequires:	libgnomeui-devel >= 2.15.91
 BuildRequires:	libtool
-BuildRequires:	libxml2-devel >= 1:2.6.18
+BuildRequires:	libxml2-devel >= 1:2.6.26
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.1.4
@@ -32,8 +34,6 @@ Requires(post,postun):	scrollkeeper
 Requires:	gail
 Requires:	libgail-gnome
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		filterout_ld	(-Wl,)?--as-needed
 
 %description
 Glade is a RAD tool to enable quick & easy development of user
@@ -89,6 +89,7 @@ GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
 %prep
 %setup -q -n glade-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
