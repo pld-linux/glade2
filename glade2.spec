@@ -1,10 +1,10 @@
 Summary:	Glade - a user interface builder for GTK+2
-Summary(es):	Herramienta visual para creaciСn de interfaces GTK+2 o GNOME
-Summary(fr):	Outil de programmation graphique visuel
-Summary(pl):	Glade - narzЙdzie do budowania GUI w oparciu o bibliotekЙ GTK+2
-Summary(pt_BR):	Ferramenta visual para criaГЦo de interfaces GTK+2 ou GNOME
-Summary(ru):	Диалоговое построение интерфейсов на основе GTK+2
-Summary(uk):	Д╕алогова побудова ╕нтерфейс╕в на основ╕ GTK+2
+Summary(es.UTF-8):   Herramienta visual para creaciцЁn de interfaces GTK+2 o GNOME
+Summary(fr.UTF-8):   Outil de programmation graphique visuel
+Summary(pl.UTF-8):   Glade - narzд≥dzie do budowania GUI w oparciu o bibliotekд≥ GTK+2
+Summary(pt_BR.UTF-8):   Ferramenta visual para criaц╖цёo de interfaces GTK+2 ou GNOME
+Summary(ru.UTF-8):   п■п╦п╟п╩п╬пЁп╬п╡п╬п╣ п©п╬я│я┌я─п╬п╣п╫п╦п╣ п╦п╫я┌п╣я─я└п╣п╧я│п╬п╡ п╫п╟ п╬я│п╫п╬п╡п╣ GTK+2
+Summary(uk.UTF-8):   п■я√п╟п╩п╬пЁп╬п╡п╟ п©п╬п╠я┐п╢п╬п╡п╟ я√п╫я┌п╣я─я└п╣п╧я│я√п╡ п╫п╟ п╬я│п╫п╬п╡я√ GTK+2
 Name:		glade2
 Version:	2.12.1
 Release:	5
@@ -45,46 +45,46 @@ format, enabling easy integration with external tools. Several tools
 are already available which can turn the XML files into source code in
 other languages such as C, C++, ADA.
 
-%description -l es
-Herramienta visual para creaciСn de interfaces GTK+2 o GNOME.
+%description -l es.UTF-8
+Herramienta visual para creaciцЁn de interfaces GTK+2 o GNOME.
 
-%description -l fr
-Glade est un outil de dИveloppement rapide (RAD en anglais) permettant
+%description -l fr.UTF-8
+Glade est un outil de dц╘veloppement rapide (RAD en anglais) permettant
 de construire facilment des interfaces utilisateurs utilisant la boite
-Ю outil GTK+2. Glade est capable d'utiliser les spИcificitИs de GNOME.
+ц═ outil GTK+2. Glade est capable d'utiliser les spц╘cificitц╘s de GNOME.
 
-Les interfaces conГues Ю l'aide de GLADE sont stockИes au format XML,
-permettant un interfacage aisИ avec d'autres outils. Plusieurs outils
+Les interfaces conц╖ues ц═ l'aide de GLADE sont stockц╘es au format XML,
+permettant un interfacage aisц╘ avec d'autres outils. Plusieurs outils
 sont disponibles pour exporter le code source dans d'autres langages
 tels que le C, le C++, l'ADA.
 
-%description -l pl
-Glade jest narzЙdziem typu RAD (Rapid Application Development) do
-szybkiego i wygodnego tworzenia interfejsu u©ytkownika z u©yciem
-biblioteki GTK+2. Zawiera tak©e w sobie generator kodu ╪rСdЁowego
+%description -l pl.UTF-8
+Glade jest narzд≥dziem typu RAD (Rapid Application Development) do
+szybkiego i wygodnego tworzenia interfejsu uе╪ytkownika z uе╪yciem
+biblioteki GTK+2. Zawiera takе╪e w sobie generator kodu е╨rцЁdе┌owego
 tworzonego interfejsu w C.
 
-Definicja interfejsu u©ytkownika tworzona przez Glade jest
-przechowywana w formacie dokumentu XML, ktСry umo©liwia Ёatwe u©ywanie
-tego opisu przez zewnЙtrzne narzЙdzia jak generatory kodu ╪rСdЁowego
-w innych jЙzykach programowania. W obecnej chwili s╠ dostЙpne
-generatory kodu ╪rСdЁowego w C, C++, ADA.
+Definicja interfejsu uе╪ytkownika tworzona przez Glade jest
+przechowywana w formacie dokumentu XML, ktцЁry umoе╪liwia е┌atwe uе╪ywanie
+tego opisu przez zewnд≥trzne narzд≥dzia jak generatory kodu е╨rцЁdе┌owego
+w innych jд≥zykach programowania. W obecnej chwili sд┘ dostд≥pne
+generatory kodu е╨rцЁdе┌owego w C, C++, ADA.
 
-%description -l pt_BR
-Ferramenta visual para criaГЦo de interfaces GTK+2 ou GNOME.
+%description -l pt_BR.UTF-8
+Ferramenta visual para criaц╖цёo de interfaces GTK+2 ou GNOME.
 
-%description -l ru
-GLADE - это программа диалогового построения интерфейсов пользователя
-под GTK+2 и GNOME. GLADE может создавать исходный код на языке C; также
-доступна поддержка языков C++, Ada95, Python и Perl посредством
-внешних инструментов, обрабатывающих XML файлы описания интерфейса,
-созданные GLADE.
+%description -l ru.UTF-8
+GLADE - я█я┌п╬ п©я─п╬пЁя─п╟п╪п╪п╟ п╢п╦п╟п╩п╬пЁп╬п╡п╬пЁп╬ п©п╬я│я┌я─п╬п╣п╫п╦я▐ п╦п╫я┌п╣я─я└п╣п╧я│п╬п╡ п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩я▐
+п©п╬п╢ GTK+2 п╦ GNOME. GLADE п╪п╬п╤п╣я┌ я│п╬п╥п╢п╟п╡п╟я┌я▄ п╦я│я┘п╬п╢п╫я▀п╧ п╨п╬п╢ п╫п╟ я▐п╥я▀п╨п╣ C; я┌п╟п╨п╤п╣
+п╢п╬я│я┌я┐п©п╫п╟ п©п╬п╢п╢п╣я─п╤п╨п╟ я▐п╥я▀п╨п╬п╡ C++, Ada95, Python п╦ Perl п©п╬я│я─п╣п╢я│я┌п╡п╬п╪
+п╡п╫п╣я┬п╫п╦я┘ п╦п╫я│я┌я─я┐п╪п╣п╫я┌п╬п╡, п╬п╠я─п╟п╠п╟я┌я▀п╡п╟я▌я┴п╦я┘ XML я└п╟п╧п╩я▀ п╬п©п╦я│п╟п╫п╦я▐ п╦п╫я┌п╣я─я└п╣п╧я│п╟,
+я│п╬п╥п╢п╟п╫п╫я▀п╣ GLADE.
 
-%description -l uk
-GLADE - це програма д╕алогово╖ побудови ╕нтерфейс╕в користувача п╕д
-GTK+2 та GNOME. GLADE може створювати вих╕дний код на мов╕ C; доступна
-також п╕дтримка мов C++, Ada95 через зовн╕шн╕
-╕нструменти, що обробляють XML файли опису ╕нтерфейсу, створен╕ GLADE.
+%description -l uk.UTF-8
+GLADE - я├п╣ п©я─п╬пЁя─п╟п╪п╟ п╢я√п╟п╩п╬пЁп╬п╡п╬я≈ п©п╬п╠я┐п╢п╬п╡п╦ я√п╫я┌п╣я─я└п╣п╧я│я√п╡ п╨п╬я─п╦я│я┌я┐п╡п╟я┤п╟ п©я√п╢
+GTK+2 я┌п╟ GNOME. GLADE п╪п╬п╤п╣ я│я┌п╡п╬я─я▌п╡п╟я┌п╦ п╡п╦я┘я√п╢п╫п╦п╧ п╨п╬п╢ п╫п╟ п╪п╬п╡я√ C; п╢п╬я│я┌я┐п©п╫п╟
+я┌п╟п╨п╬п╤ п©я√п╢я┌я─п╦п╪п╨п╟ п╪п╬п╡ C++, Ada95 я┤п╣я─п╣п╥ п╥п╬п╡п╫я√я┬п╫я√
+я√п╫я│я┌я─я┐п╪п╣п╫я┌п╦, я┴п╬ п╬п╠я─п╬п╠п╩я▐я▌я┌я▄ XML я└п╟п╧п╩п╦ п╬п©п╦я│я┐ я√п╫я┌п╣я─я└п╣п╧я│я┐, я│я┌п╡п╬я─п╣п╫я√ GLADE.
 
 %prep
 %setup -q -n glade-%{version}
