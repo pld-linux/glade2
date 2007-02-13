@@ -1,10 +1,10 @@
 Summary:	Glade - a user interface builder for GTK+2
-Summary(es.UTF-8):   Herramienta visual para creación de interfaces GTK+2 o GNOME
-Summary(fr.UTF-8):   Outil de programmation graphique visuel
-Summary(pl.UTF-8):   Glade - narzędzie do budowania GUI w oparciu o bibliotekę GTK+2
-Summary(pt_BR.UTF-8):   Ferramenta visual para criação de interfaces GTK+2 ou GNOME
-Summary(ru.UTF-8):   Диалоговое построение интерфейсов на основе GTK+2
-Summary(uk.UTF-8):   Діалогова побудова інтерфейсів на основі GTK+2
+Summary(es.UTF-8):	Herramienta visual para creación de interfaces GTK+2 o GNOME
+Summary(fr.UTF-8):	Outil de programmation graphique visuel
+Summary(pl.UTF-8):	Glade - narzędzie do budowania GUI w oparciu o bibliotekę GTK+2
+Summary(pt_BR.UTF-8):	Ferramenta visual para criação de interfaces GTK+2 ou GNOME
+Summary(ru.UTF-8):	Диалоговое построение интерфейсов на основе GTK+2
+Summary(uk.UTF-8):	Діалогова побудова інтерфейсів на основі GTK+2
 Name:		glade2
 Version:	2.12.1
 Release:	5
