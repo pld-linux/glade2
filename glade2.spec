@@ -7,7 +7,7 @@ Summary(ru.UTF-8):	Диалоговое построение интерфейс�
 Summary(uk.UTF-8):	Діалогова побудова інтерфейсів на основі GTK+2
 Name:		glade2
 Version:	2.12.1
-Release:	5
+Release:	6
 License:	GPL v2+
 Group:		Development/Building
 Source0:	http://ftp.gnome.org/pub/gnome/sources/glade/2.12/glade-%{version}.tar.bz2
@@ -33,6 +33,8 @@ Requires(post,postun):	scrollkeeper
 # loads libgail.so, libgail-gnome.so GTK+ modules on start
 Requires:	gail
 Requires:	libgail-gnome
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -108,6 +110,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
+[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
+	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 # glade-2.0.mo, but gnome/help/glade-2 - use --all-name
 %find_lang glade-2.0 --all-name --with-gnome
 
