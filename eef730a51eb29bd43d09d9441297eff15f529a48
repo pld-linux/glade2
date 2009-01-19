@@ -1,0 +1,4 @@
+- updated to 0.5.8,
+- added bonobo support,
+- removed using applnk patch,
+- spec adapterized.
