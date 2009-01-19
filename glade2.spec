@@ -14,6 +14,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade/2.12/glade-%{version}.tar.
 # Source0-md5:	54082e44bba1c75770aa0bff2f38987e
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-gda12.patch
+Patch2:		%{name}-gtk_clist.patch
 URL:		http://glade.gnome.org/
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake >= 1:1.9
@@ -94,6 +95,7 @@ GTK+2 та GNOME. GLADE може створювати вихідний код н
 %setup -q -n glade-%{version}
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 sed -i -e 's#sr@Latn#sr@latin#' po/LINGUAS
 mv po/sr@{Latn,latin}.po
