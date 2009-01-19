@@ -1,0 +1,4 @@
+- regenerate am/ac files for allow build in gettext 0.10.36 environment,
+- added screollkeeper files in %files list,
+- added screollkeeper to BuildRequires and Prereq (added register
+  screollkeeper files in screollkeeper database).
