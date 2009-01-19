@@ -1,0 +1,3 @@
+- updated to 0.5.4,
+- added applnk patch for installing desktop file in applnk tree,
+- removed Makefile* from %doc.
