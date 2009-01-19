@@ -1,0 +1,44 @@
+--- glade-2.12.2/glade/gbwidgets/gbclist.c.orig	2007-12-08 23:56:06.000000000 +0100
++++ glade-2.12.2/glade/gbwidgets/gbclist.c	2009-01-19 20:37:36.775854072 +0100
+@@ -19,7 +19,7 @@
+ 
+ #include <string.h>
+ 
+-#include <gtk/gtkclist.h>
++#include <gtk/gtk.h>
+ #include <gtk/gtkhbox.h>
+ #include <gtk/gtkmain.h>
+ #include <gtk/gtkspinbutton.h>
+--- glade-2.12.2/glade/glade_project_view.h.orig	2007-12-08 23:56:06.000000000 +0100
++++ glade-2.12.2/glade/glade_project_view.h	2009-01-19 20:37:36.775854072 +0100
+@@ -18,7 +18,7 @@
+ #ifndef GLADE_PROJECT_VIEW_H
+ #define GLADE_PROJECT_VIEW_H
+ 
+-#include <gtk/gtkclist.h>
++#include <gtk/gtk.h>
+ 
+ #include "glade_project.h"
+ 
+--- glade-2.12.2/glade/glade_keys_dialog.c.orig	2007-12-08 23:56:06.000000000 +0100
++++ glade-2.12.2/glade/glade_keys_dialog.c	2009-01-19 20:37:36.775854072 +0100
+@@ -25,7 +25,7 @@
+ 
+ #include <gtk/gtkbox.h>
+ #include <gtk/gtkbutton.h>
+-#include <gtk/gtkclist.h>
++#include <gtk/gtk.h>
+ #include <gtk/gtkstock.h>
+ #include <gtk/gtkscrolledwindow.h>
+ 
+--- glade-2.12.2/glade/glade_menu_editor.c.orig	2007-12-08 23:56:06.000000000 +0100
++++ glade-2.12.2/glade/glade_menu_editor.c	2009-01-19 20:37:36.775854072 +0100
+@@ -28,7 +28,7 @@
+ #include <gdk/gdkkeysyms.h>
+ #include <gtk/gtkarrow.h>
+ #include <gtk/gtkaccellabel.h>
+-#include <gtk/gtkclist.h>
++#include <gtk/gtk.h>
+ #include <gtk/gtkcombo.h>
+ #include <gtk/gtkentry.h>
+ #include <gtk/gtkeventbox.h>
